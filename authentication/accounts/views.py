@@ -8,7 +8,6 @@ from django.contrib import messages
 def landing(request):
     return render(request, 'landing.html')
 
-
 def login_view(request):
     if request.method == 'POST':
         username = request.POST.get('username')

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block theme %}data-theme="lemonade"{% endblock %}
+
+{% block title %}Page 2{% endblock %}
+
+{% block h1 %}Page 2{% endblock %}
+{% block h2 %}Mixed Data{% endblock %}
+{% block p %}Displaying list and dictionary elements:{% endblock %}
+
+{% block main %}
+<h3>List Items:</h3>
+<ol>
+    <li>Item 1: {{ list1.0 }}</li>
+    <li>Item 2: {{ list1.1 }}</li>
+    <li>Item 3: {{ list1.2 }}</li>
+    <li>Item 4: {{ list1.3 }}</li>
+</ol>
+
+<h3>Dictionary Items:</h3>
+<ul>
+    <li>Key A: {{ dict1.A }}</li>
+    <li>Key B: {{ dict1.B }}</li>
+    <li>Key C: {{ dict1.C }}</li>
+    <li>Key D: {{ dict1.D }}</li>
+    <li>Key E: {{ dict1.E }}</li>
+</ul>
+{% endblock %}

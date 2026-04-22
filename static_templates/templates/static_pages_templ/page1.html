@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block theme %}data-theme="dark"{% endblock %}
+
+{% block title %}Page 1{% endblock %}
+
+{% block h1 %}Page 1{% endblock %}
+{% block h2 %}User Profile{% endblock %}
+{% block p %}Data types examples{% endblock %}
+
+{% block main %}
+<ul>
+    <li>USER: {{ user }}</li>
+    <li>Active: {{ login }}</li>
+    <li>Password length: {{ password_length }}</li>
+</ul>
+{% endblock %}
